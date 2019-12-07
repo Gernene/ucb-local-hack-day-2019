@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function App() {
+export function HomeView () {
   return (
     <>Hello world! This is home!</>
   );
