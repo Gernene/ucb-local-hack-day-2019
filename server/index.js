@@ -34,7 +34,7 @@ app.use(logger('dev'));
 
 // Routes
 app.use('/api/timeslots', timeSlotsRoute);
-app.use('./routes/users', usersRoute);
+app.use('/api/users', usersRoute);
 
 // launch our backend into a port
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
