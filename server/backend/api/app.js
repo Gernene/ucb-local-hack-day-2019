@@ -9,7 +9,7 @@ db = new Db('careerdb', server);
 
 db.open(function(err, db) {
     if (!err) {
-        console.log("Connected to the career database");
+        console.log("Connected to the career database. Through this scheduler, you can make appointments with educators on a variety of topics");
         db.collection('careers', {strict:true}, function(err, collection) {
             if (err) {
                 console.log("The 'career' database doesn't exist.");
