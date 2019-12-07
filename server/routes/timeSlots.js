@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const TimeSlot = require('../models/timeslot');
+const TimeSlot = require('../models/timeSlotModel');
 
 router.use(function timeLog (req, res, next) {
   console.log('Time: ', Date.now());
