@@ -3,3 +3,55 @@ body {
   background: #000000;
   color: #e5e5e5;
 }
+
+div {
+  box-sizing: border-box;
+}
+
+.slot-selector-days {
+  display: flex;
+  padding: 0 0 1rem 4rem;
+}
+
+.slot-selector-days > div {
+  flex: 1;
+  margin: 0 1rem 0 0;
+}
+
+.slot-selector-days > div:last-child {
+  margin: 0;
+}
+
+.slot-selector-schedules {
+  display: flex;
+  padding: 0 0 0 4rem;
+  position: relative;
+}
+
+.slot-selector-times {
+  position: absolute;
+  left: 0;
+  top: -.5rem;
+}
+
+.slot-selector-times > div {
+  height: 4rem;
+}
+
+.slot-selector-schedule {
+  border: 1px solid #CFB87C;
+  border-bottom: none;
+  border-radius: 4px;
+  flex: 1;
+  margin: 0 1rem 0 0;
+}
+
+.slot-selector-schedule:last-child {
+  margin: 0;
+}
+
+.slot-selector-slot {
+  background: rgba(207, 184, 124, .5);
+  border-bottom: 1px solid #CFB87C;
+  height: 2rem;
+}
