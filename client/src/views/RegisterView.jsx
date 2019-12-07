@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export function RegisterView () {
   const [user, setUser] = useState({
@@ -18,14 +19,21 @@ export function RegisterView () {
       });
   };
 
+  const handleInput = (e) => {
+    setUser({
+      ...user,
+      [e.target.name]: e.target.value
+    });
+  };
+
   return (
     <>
       <h2>Register</h2>
-      <form onSubmit={handlSubmit}>
+      <form onSubmit={handleSubmit}>
         <label>Email:</label>
-        <input type="email"/>
+        <input onChange={handleInput} type="email"/>
         <label>Password:</label>
-        <input type="password"/>
+        <input conChange={handleInput} type="password"/>
         <input type="submit" value="Register"/>
       </form>
     </>
