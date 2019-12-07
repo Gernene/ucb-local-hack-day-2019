@@ -8,6 +8,22 @@ div {
   box-sizing: border-box;
 }
 
+.btn-primary {
+  background: #CFB87C;
+  border: 1px solid #CFB87C;
+  border-radius: 4px;
+  color: #000;
+  font-size: 1rem;
+  padding: 1rem;
+  transition: all .4s ease;
+}
+
+.btn-primary:hover {
+  background: #000;
+  color: #CFB87C;
+  cursor: pointer;
+}
+
 .slot-selector-days {
   display: flex;
   padding: 0 0 1rem 4rem;
@@ -57,5 +73,5 @@ div {
 }
 
 .slot-selector-slot.selected {
-  background: rgb(207, 184, 124);
+  background: rgba(207, 184, 124, .7);
 }

@@ -20,8 +20,12 @@ export function SlotSelector () {
     setSlots([...slots]);
   };
 
+  const handleSubmit = () => {
+
+  };
+
   return (
-    <div className="slot-selector">
+    <form onSubmit={handleSubmit} className="slot-selector">
       <div className="slot-selector-days">
         {days.map(day => {
           return (<div>{day}</div>);
@@ -29,7 +33,7 @@ export function SlotSelector () {
       </div>
       <div className="slot-selector-schedules">
         <div className="slot-selector-times">
-          {slots[0].map((slot, i) => {
+          {[...Array(12)].map((slot, i) => {
               return (<div>{i+7}:00</div>);
           })}
         </div>
@@ -43,6 +47,7 @@ export function SlotSelector () {
           );
         })}
       </div>
-    </div>
+      <input className="btn-primary" type="submit" value="Save Schedule"/>
+    </form>
   );
 }
