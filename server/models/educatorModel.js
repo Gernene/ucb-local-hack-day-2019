@@ -36,18 +36,18 @@ educatorSchema.methods.generateAuthToken = function() {
     return token;
 }
 
-const educator = mongoose.model('Educator', EducatorSchema);
+const Educator = mongoose.model('Educator', EducatorSchema);
 
-function validateEducator(educator) {
+function validateEducator(Educator) {
     const schema = {
       name: Joi.string().min(3).max(50).required(),
       email: Joi.string().min(5).max(255).required().email(),
       password: Joi.string().min(3).max(255).required()
     };
   
-    return Joi.validate(educator, schema);
+    return Joi.validate(Educator, schema);
   }
 
-exports.Educator = educator; 
+exports.Educator = Educator; 
 exports.validate = validateEducator;
 

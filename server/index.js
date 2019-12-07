@@ -35,8 +35,10 @@ app.use(logger('dev'));
 // Routes
 app.use('/api/timeSlots', timeSlotsRoute);
 app.use('./routes/users', usersRoute);
-app.get('/api/timeSlots', getTimeSlots);
-app.get('/api/educatorTimeSlots', getEducatorTimeSlots);
+app.get('/app', app.getTimeSlots); 
+app.get('/app', app.getEducatorTimeSlots);
+app.post('/app', app, writeMeetingDescription);
+
 
 // launch our backend into a port
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
