@@ -48,6 +48,6 @@ function validateEducator(educator) {
     return Joi.validate(educator, schema);
   }
 
-exports.Educator = educator; 
+exports.educator = educator; 
 exports.validate = validateEducator;
 
