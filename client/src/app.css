@@ -55,3 +55,7 @@ div {
   border-bottom: 1px solid #CFB87C;
   height: 2rem;
 }
+
+.slot-selector-slot.selected {
+  background: rgb(207, 184, 124);
+}
