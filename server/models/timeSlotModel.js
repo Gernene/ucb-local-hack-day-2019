@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const TimeSlotSchema = new Schema(
   {
-    day: Number,
-    hour: Number,
-    minute: Number
+    startDate: Number,
+    endDate: Number,
+    user: mongoose.ObjectID
   },
   { timestamps: true }
 );

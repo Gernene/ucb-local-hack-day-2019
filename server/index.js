@@ -33,8 +33,10 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 // Routes
-app.use('/api/timeslots', timeSlotsRoute);
+app.use('/api/timeSlots', timeSlotsRoute);
 app.use('./routes/users', usersRoute);
+app.get('/api/timeSlots', getTimeSlots);
+app.get('/api/educatorTimeSlots', getEducatorTimeSlots);
 
 // launch our backend into a port
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
