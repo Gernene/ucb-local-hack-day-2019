@@ -24,6 +24,12 @@ const UserSchema = new mongoose.Schema({
     minlength: 3,
     maxlength: 255
   },
+  courses: {
+      type: Array,
+      required: true,
+      minlength: 4,
+      maxlength: 48
+  },
   //give different access rights if admin or not 
   isAdmin: Boolean
 });
