@@ -30,6 +30,12 @@ const UserSchema = new mongoose.Schema({
       minlength: 4,
       maxlength: 48
   },
+  internships: {
+      type: Array,
+      required: true,
+      minlength: 1,
+      maxlength: 255
+  },
   //give different access rights if admin or not 
   isAdmin: Boolean
 });
