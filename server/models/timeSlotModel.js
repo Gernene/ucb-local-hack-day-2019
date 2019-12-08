@@ -5,7 +5,7 @@ const TimeSlotSchema = new Schema(
   {
     startDate: Number,
     endDate: Number,
-    user: mongoose.ObjectID
+    user: mongoose.ObjectId
   },
   { timestamps: true }
 );

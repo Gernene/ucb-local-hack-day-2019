@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { HomeView } from "./views/HomeView";
 import { AppLayout } from "./components/AppLayout";
-import { BookView } from "./views/BookView";
+import { ScheduleView } from "./views/ScheduleView";
 import { RegisterView } from "./views/RegisterView";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomeView}/>
           <Route exact path="/register" component={RegisterView}/>
-          <Route exact path="/book" component={BookView}/>
+          <Route exact path="/schedule" component={ScheduleView}/>
         </Switch>
       </AppLayout>
     </Router>

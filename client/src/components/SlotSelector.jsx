@@ -47,7 +47,9 @@ export function SlotSelector () {
           );
         })}
       </div>
-      <input className="btn-primary" type="submit" value="Save Schedule"/>
+      <div class="just-center">
+        <input className="btn-primary" type="submit" value="Save Schedule"/>
+      </div>
     </form>
   );
 }
