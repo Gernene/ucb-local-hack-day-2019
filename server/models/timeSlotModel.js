@@ -3,8 +3,11 @@ const Schema = mongoose.Schema;
 
 const TimeSlotSchema = new Schema(
   {
-    startDate: Number,
-    endDate: Number,
+    //startDate: Number,
+    //endDate: Number,
+    day: Number,
+    earliestTime: Number,
+    latestTime: Number,
     user: mongoose.ObjectId
   },
   { timestamps: true }
