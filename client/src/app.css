@@ -2,10 +2,65 @@ html,
 body {
   background: #000000;
   color: #e5e5e5;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 div {
   box-sizing: border-box;
+}
+
+.just-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-wrapper {
+  background: #CFB87C;
+  padding: 2rem 0;
+}
+
+.nav {
+  color: #000;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: inline-flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-links ul {
+  margin: 0;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: #000;
+  transition: all .4s ease;
+}
+
+.nav-links a:hover {
+  color: rgba(0, 0, 0 , .5);
+}
+
+.wrapper {
+  margin: 4rem auto;
+  max-width: 1000px;
 }
 
 .btn-primary {
@@ -24,6 +79,13 @@ div {
   cursor: pointer;
 }
 
+
+/* Slot selecter styles */
+
+.slot-selector {
+  margin: 4rem 0 0 0;
+}
+
 .slot-selector-days {
   display: flex;
   padding: 0 0 1rem 4rem;
@@ -40,7 +102,7 @@ div {
 
 .slot-selector-schedules {
   display: flex;
-  padding: 0 0 0 4rem;
+  padding: 0 0 2rem 4rem;
   position: relative;
 }
 
@@ -70,6 +132,12 @@ div {
   background: rgba(207, 184, 124, .5);
   border-bottom: 1px solid #CFB87C;
   height: 2rem;
+  transition: all .4s ease;
+}
+
+.slot-selector-slot:hover {
+  background: rgb(207, 184, 124, 1);
+  cursor: pointer;
 }
 
 .slot-selector-slot.selected {

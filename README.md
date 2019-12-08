@@ -1,4 +1,6 @@
-# ucb-local-hack-day-2019. A project by Gernene and Sidhant
+# ucb-local-hack-day-2019. A project by Gernene and Sid
 
-This hackathon project during Local Hack Day presented by HackCU effectively creates a advising appointment scheduler for use the of students 
-to gain advice from educators on various topics such as study abroad, mock job interviews, and internships. 
+This hackathon project effectively creates an advising appointment scheduler for students to gain advice from advisors on various professional development topics such as study abroad, mock job interviews, and internships. 
+
+Gernene: Frontend, UI, Backend, client
+Sid: User Authentication, Backend, server
